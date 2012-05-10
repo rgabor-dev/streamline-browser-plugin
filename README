@@ -1,0 +1,54 @@
+Streamline Annotation Browser Plugin
+====================================
+
+Get FireBreath
+==============
+  http://www.firebreath.org/
+
+  
+Make a project
+==============
+  cd firebreath-1.6
+  mkdir projects
+  cd projects
+  cp -r /repo/path/streamline-browser-plugin/StreamlineAnnotation .
+
+
+Compile the project
+===================
+  cd firebreath-1.6
+  ./prepmake.sh
+  cd build
+  make
+
+
+Plugin path
+===========
+  If everything is went well you can find the plugin at: 
+    build/bin/StreamlineAnnotation
+
+  Set plugin search path:
+    export MOZ_PLUGIN_PATH=/your/plugin/path
+
+
+Simple page
+===========
+
+  <html>
+  <body>
+
+  <embed style="width:0px; height:0px;" type="application/x-streamlineannotation" id="plugin">
+
+  <script type="text/javascript">
+    var plugin = document.getElementById("plugin");
+    
+    plugin.startColorizedAnnotate("green","my stuff");
+
+    // do something what you want to annotate
+
+    plugin.stopAnnotate();
+
+  </script>
+
+  </body>
+  </html>
