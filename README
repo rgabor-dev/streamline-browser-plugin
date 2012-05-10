@@ -1,6 +1,10 @@
 Streamline Annotation Browser Plugin
 ====================================
 
+This is a NPAPI plugin created with FireBreath framework.
+It allows you to annotate your browser profiling info with Streamline.
+
+
 Get FireBreath
 ==============
   http://www.firebreath.org/
