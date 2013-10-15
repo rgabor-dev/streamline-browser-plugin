@@ -9,7 +9,13 @@ Get FireBreath
 ==============
   http://www.firebreath.org/
 
-  
+
+Get Streamline anotation header
+===============================
+  You can find the annotation header in your Streamline directory under arm/gator/annotate/
+  Copy streamline_annotate.h into your streamline-browser-plugin/StreamlineAnnotation/ directory
+
+
 Make a project
 ==============
   cd firebreath-1.6
@@ -28,7 +34,7 @@ Compile the project
 
 Plugin path
 ===========
-  If everything is went well you can find the plugin at: 
+  If everything is went well you can find the plugin at:
     build/bin/StreamlineAnnotation
 
   Set plugin search path:
@@ -45,7 +51,7 @@ Simple page
 
   <script type="text/javascript">
     var plugin = document.getElementById("plugin");
-    
+
     plugin.startColorizedAnnotate("green","my stuff");
 
     // do something what you want to annotate
